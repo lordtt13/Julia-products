@@ -33,3 +33,17 @@ end
 
 a = ['1',2.]
 showdebugprintln(a)
+
+# Functions with multiple methods
+
+mycos(x) = cos(x)
+
+mycos(.7)  # standard value of cos (angle in radians, of course)
+
+mycos(adj, hyp) = adj/hyp
+
+mycos(12, 13)  # the cosine of the larger angle in a standard 5, 12, 13 triangle
+
+methods(mycos)  #Check this carefully!
+
+mycos(thet::Float64) = cos(thet)   # note  the use of :: to force Julia to check the type
