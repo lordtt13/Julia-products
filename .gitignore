@@ -2,3 +2,12 @@
 
 # Data Skipped
 *.csv
+*.dat
+
+# Plots Skipped
+*.jpg
+*.jpeg
+*.pd
+
+# Skipped redundant .ipynb notebooks
+ComplexPlot.ipynb
